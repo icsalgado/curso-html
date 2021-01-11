@@ -3,16 +3,56 @@
 	<head>
 		<meta charset="utf-8"> 
         <title>Minha Pagina</title>
-        <meta http-equiv="refresh" content="5">
+        <meta http-equiv="refresh" content="30">
     </head>	
     
     <body>
-        <form action="cadastro.php" method="POST">
+        <form id="formcadastro" action="cadastro.php" method="POST">
             <fieldset>
                 <legend>Login</legend>
-                Nome:<br><input type="text" name="nome"><br>
-                senha:<br><input type="password" name="senha"><br>
-                <input type="submit" name="btn-enviar" value="Enviar">
+                Nome:<br><input type="text" name="nome" required maxlength="5"><br>
+                senha:<br><input type="password" name="senha" autofocus><br>
+                Sobrenome:<br><input type="text" name="sobrenome" disabled><br>
+                E-mail:<br><input type="email" name="E-mail" autocomplete="on" placeholder="seuemail@email.com"><br>
+                Time:<br><input type="radio" name="time" value="Vasco">Vasco<br>
+                <input type="radio" name="time" value="Internacional" checked>Internacional<br>
+                <input type="radio" name="time" value="Gremio">Gremio<br>
+                Cor:<br><input type="checkbox" name="cor" value="Vermelho" checked>Vermelho<br>
+                <input type="checkbox" name="cor" value="Azul">Azul<br>
+                <input type="checkbox" name="cor" value="Branco">Branco<br>
+                Quantidade: <input type="number" name="quantidade" min="0" max="500"><br>
+                quantidade: <input type="range" name="quantidade"><br>
+                Cor: <input type="Color" name="cor"><br>
+                Foto:<br><input type="file" name="foto"><br>
+                <input type="hidden" name="id"><br>
+                URL:<br><input type="url" name="site"><br>
+                Busca:<br><input type="search" name="busca"><br>
+                Telefone:<br><input type="tel" name="telefone"><br>
+                Data:<br><input type="date" name="data" min="1990-12-31"><br>
+                Hora:<br><input type="time" name="hora"><br>
+                Mensagem:<br><textarea name="mensagem" id="" cols="30" rows="10"></textarea><br>
+                <button type="button">Submeter</button><br>
+
+                <select name="Veiculo">
+                    <optgroup label="VW">
+                        <option value="fusca">Fusca</option>
+                        <option value="gol" selected>Gol</option>
+                    </optgroup>
+                    <optgroup label="GM">
+                        <option value="corsa">Corsa</option>
+                    </optgroup>
+                </select><br>
+
+                <input name="cursos" list="lcursos">
+                    <datalist id="lcursos">
+                        <option value="html">
+                        <option value="css">
+                        <option value="js">
+                    </datalist>
+
+                
+
+                <input type="submit" name="btn-enviar" value="Enviar" formaction="enviaremail" formmethod="GET" formenctype="text">
             </fieldset>
         </form>
     </body>
