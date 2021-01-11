@@ -7,13 +7,13 @@
     </head>	
     
     <body>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-        </audio>
-
-        <video controls width="700" height="300">
-            <track kind="subtitles" srclang="pt-br" label="PT-BR" src="legendas.vtt"> </video>
-            <source src="video.mp4" type="video/mp4">
-        </video>
+        <form action="cadastro.php" method="POST">
+            <fieldset>
+                <legend>Login</legend>
+                Nome:<br><input type="text" name="nome"><br>
+                senha:<br><input type="password" name="senha"><br>
+                <input type="submit" name="btn-enviar" value="Enviar">
+            </fieldset>
+        </form>
     </body>
 </html>
