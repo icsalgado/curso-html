@@ -4,25 +4,38 @@
 		<meta charset="utf-8"> 
         <title>Minha Pagina</title>
         <style>
-            .elemento {width: 300px; height: 300px; background-color: indigo;}
+            svg {background-color: grey;}
+            svg rect {fill: hotpink; stroke: indianred; stroke-width: 3; opacity: 0.5;}
+            svg circle {fill: hotpink; stroke: indianred; stroke-width: 3; opacity: 0.5;}
+            svg ellipse {fill: hotpink; stroke: indianred; stroke-width: 3; opacity: 0.5;}
+            svg line {stroke: indianred; stroke-width: 5;}
+            svg polyline {stroke: indianred; stroke-width: 5;}
+            svg polygon {stroke: indianred; stroke-width: 5;}
         </style>
     </head>	
     
     <body>
-        ICSalgado <time datetime="1991-02-02">2 de fevereito de 1991</time>
-
-        <div class="elemento" contextmenu="menu">
-        </div>
-
-        <menu type="" id="menu">
-            <menuitem>Atualizar</menuitem>
-        </menu>
-
-        <form method="GET" action="cadastrp.php">
-            Nome <input type="text" name="nome"><br>
-            Chave <keygen name="chave"><br>
-            <input type="submit" value="enviar">
-        </form>
-
+        <svg width="300" height="160">
+            <rect width="280" height="140" x="10" y="10" " rx="20" ry="20"></rect>
+            <circle cx="425" cy="280" r="57"></circle>
+        </svg><br>
+        <svg width="300" height="160">
+            <circle cx="225" cy="80" r="57"></circle>
+        </svg><br>
+        <svg width="300" height="160">
+            <ellipse cx="150" cy="80" rx="110" ry="45"></ellipse>
+        </svg><br>
+        <svg width="300" height="160">
+            <text x="20" y="40" >Aprendendo SVG</text>
+        </svg><br>
+        <svg width="300" height="160">
+            <line x1="18" y1="16" x2="287" y2="138"></line>
+        </svg><br>
+        <svg width="300" height="165">
+            <polyline points="10,78 67,43 148,104 178,47 290,130"></polyline>
+        </svg><br>
+        <svg width="300" height="165">
+            <polygon points="34,111 125,14 190,120"></polygon>
+        </svg>
     </body>
 </html>
