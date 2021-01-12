@@ -3,31 +3,26 @@
 	<head>
 		<meta charset="utf-8"> 
         <title>Minha Pagina</title>
-        <link rel="icon" href="imagem.jpg">
-        <link rel="stylesheet" href="style.css">
         <style>
-            h2 {color: indianred;}
+            .elemento {width: 300px; height: 300px; background-color: indigo;}
         </style>
     </head>	
     
     <body>
-        <script>
-            alert("Olá mundo")
-        </script>
-        <script src="externo.js"></script>
-        <noscript>não suportado</noscript>
+        ICSalgado <time datetime="1991-02-02">2 de fevereito de 1991</time>
 
-        <h1 style="color: green;">Teste</h1>
-        <h2>Teste</h2>
-        <h3>Teste</h3>
+        <div class="elemento" contextmenu="menu">
+        </div>
 
-        <br><br>
+        <menu type="" id="menu">
+            <menuitem>Atualizar</menuitem>
+        </menu>
 
-        <img src="imagem.jpg" width="50%" usemap="#imgmapeada">
-
-        <map name="imgmapeada">
-            <area shape="rect" coords="141,91,316,354" href="#">
-        </map>
+        <form method="GET" action="cadastrp.php">
+            Nome <input type="text" name="nome"><br>
+            Chave <keygen name="chave"><br>
+            <input type="submit" value="enviar">
+        </form>
 
     </body>
 </html>
